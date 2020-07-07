@@ -58,7 +58,11 @@
             </thead>
             <tbody>
               <tr *ngFor="let user of users">
-                <td>{{user.firstname}}</td>
+                <td [ngClass]="{
+                    'text-success':user.firstname === 'Koffi',
+                    'text-primary':user.firstname === 'Sid',
+                    'text-danger':user.firstname === 'Yaovi'
+                    }">{{user.firstname}}</td>
                 <td>{{user.lastname}}</td>
                 <td>{{user.email}}</td>
               </tr>

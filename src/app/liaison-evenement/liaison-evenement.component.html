@@ -1,0 +1,8 @@
+<!--liaison-evenement.component.html-->
+<input #newNom (keyup.enter)="ajoutNom(newNom.value)" (blur)="ajoutNom(newNom.value); newNom.value='' ">
+
+<button class="btn-primary" (click)="ajoutNom(newNom.value)">Ajouter</button>
+
+<ul>
+    <li *ngFor="let nom of noms">{{nom}}</li>
+</ul>

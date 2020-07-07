@@ -16,8 +16,6 @@ export class UserService {
       firstname: 'Sid',
       lastname: 'Lamrous',
       email: 'sid.lamrous@gmail.com'
-       
-    
 
     }), new Utilisateurs({
         id: 2,
@@ -31,16 +29,13 @@ export class UserService {
         firstname: 'Saturnin',
         lastname: 'JAVA',
         email: 'java.saturnin@gmail.com'
-         
-      
-  
+
       }), new Utilisateurs({
           id: 2,
           firstname: 'Daniel',
           lastname: 'CSHARP',
           email: 'daniel@gmail.com'
-  
-  
+
       })
 
 
